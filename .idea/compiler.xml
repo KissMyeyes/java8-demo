@@ -6,33 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jdk17demo" />
-        <module name="jdk8demo" />
-        <module name="jdk19demo" />
-        <module name="jdk11demo" />
+        <module name="jdk17" />
+        <module name="jdk-demo" />
+        <module name="jdk11" />
+        <module name="jdk8" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ear" target="8" />
-      <module name="ejbs" target="8" />
-      <module name="logging" target="8" />
-      <module name="primary-source" target="8" />
-      <module name="projects" target="8" />
-      <module name="servlet" target="8" />
-      <module name="servlets" target="8" />
+      <module name="jdk-demo" target="17" />
+      <module name="jdk11" target="17" />
+      <module name="jdk17" target="1.8" />
+      <module name="jdk8" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="ejbs" options="-parameters" />
       <module name="jdk-demo" options="-parameters" />
-      <module name="jdk11demo" options="-parameters" />
-      <module name="jdk17demo" options="-parameters" />
-      <module name="jdk19demo" options="-parameters" />
-      <module name="jdk8demo" options="-parameters" />
-      <module name="logging" options="-parameters" />
-      <module name="primary-source" options="-parameters" />
-      <module name="servlet" options="-parameters" />
+      <module name="jdk11" options="-parameters" />
+      <module name="jdk17" options="-parameters" />
+      <module name="jdk8" options="-parameters" />
     </option>
   </component>
 </project>
