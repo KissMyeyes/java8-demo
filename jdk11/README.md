@@ -14,6 +14,19 @@ JDK 9
     因为不知道哪些第三方包依赖了哪些jar
 
 
-4 Java9 新特性之多版本兼容 Jar 包  
+4 Java9 新特性之多版本兼容 Jar 包 
+    
+    在META-INF 目录下创建多版本兼容class
+    目前觉得除非纯utils 这种依赖较少的类，不然建立完全一套兼容业务代码复杂度较高
 
 5 Java9 新特性之接口 Interface 的升级
+    
+    新增 private 方法，详见 FilterProcess.java
+
+248：使 G1 成为默认垃圾回收器  
+295：提前编译  
+291：弃用并发标记扫描 （CMS） 垃圾回收器
+
+jdk9开始不允许_作为标识符
+
+String底层结构的变化
